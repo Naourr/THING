@@ -32,7 +32,7 @@ a {
 }
 .screenholder {
     height: 100%;
-    width: 100% ;
+    width: 100%;
     background-color: white;
     border: 3px solid palevioletred;
     border-radius: 10px;
@@ -41,13 +41,20 @@ a {
     justify-content: center;
     align-items: center;
 }
+.screen::placeholder {
+    color: salmon;
+    font-size: 5rem;
+    text-align: center;
+}
 .screen {
+    height: 70%;
     width: 90%;
-    border: none;
     color: salmon;
     font-size: 2rem;
     transition: all 0.2s ease;
-    text-overflow: clip;
+    outline: none;
+    border: none;
+    margin-top: 1.5rem;
 }
 .bottomhalf {
     width: 100%;
