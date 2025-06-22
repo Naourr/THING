@@ -96,14 +96,15 @@ a {
     background-color: rgb(255, 77, 107);
 }
 .operator {
-    background-color: plum;
+    background-color: rgb(228, 129, 228);
     color: white;
+    font-weight: bolder;
 }
 .operator:hover {
-    background-color: rgb(226, 127, 226);
+    background-color: rgb(230, 102, 230);
 }
 .operator:active {
-    background-color: rgb(235, 114, 235);
+    background-color: rgb(231, 77, 231);
 }
 .clear {
     background-color: rgb(59, 59, 59);
