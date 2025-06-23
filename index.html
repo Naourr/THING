@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <input class="tago" type="text" readonly></input>
     <div class="container">
         <div class="case">
             <div class="tophalf">
@@ -18,26 +19,28 @@
             <div class="bottomhalf">
                 <div class="grid">
     
-                    <div class="button" onclick="display('1')">1</div>
-                    <div class="button" onclick="display('2')">2</div>
-                    <div class="button" onclick="display('3')">3</div>
-                    <div class="button operator" onclick="display('*')">*</div>
+                    <div class="button" onclick="tagoonly('1'), display('1')">1</div>
+                    <div class="button" onclick="tagoonly('2'), display('2')">2</div>
+                    <div class="button" onclick="tagoonly('3'), display('3')">3</div>
+                    <div class="button operator" onclick="tagoonly('*'), display('x')">x</div>
 
-                    <div class="button" onclick="display('4')">4</div>
-                    <div class="button" onclick="display('5')">5</div>
-                    <div class="button" onclick="display('6')">6</div>
-                    <div class="button operator" onclick="display('/')">/</div>
-                 
-                    <div class="button" onclick="display('7')">7</div>
-                    <div class="button" onclick="display('8')">8</div>
-                    <div class="button" onclick="display('9')">9</div>
-                    <div class="button operator" onclick="display('+')">+</div>
+                    <div class="button" onclick="tagoonly('4'), display('4')">4</div>
+                    <div class="button" onclick="tagoonly('5'), display('5')">5</div>
+                    <div class="button" onclick="tagoonly('6'), display('6')">6</div>
+                    <div class="button operator" onclick="tagoonly('/'), display('÷')">÷</div>
+
+                    <div class="button" onclick="tagoonly('7'), display('7')">7</div>
+                    <div class="button" onclick="tagoonly('8'), display('8')">8</div>
+                    <div class="button" onclick="tagoonly('9'), display('9')">9</div>
+                    <div class="button operator" onclick="tagoonly('+'), display('+')">+</div>
                     
                     <div class="button clear" onclick="clearscreen()">C</div>
-                    <div class="button" onclick="display('0')">0</div>
-                    <div class="button" onclick="display('.')">.</div>
-                    <div class="button operator" onclick="display('-')">-</div>
-                    
+                    <div class="button" onclick="tagoonly('0'), display('0')">0</div>
+                    <div class="button" onclick="tagoonly('.'), display('.')">.</div>
+                    <div class="button operator" onclick="tagoonly('-'), display('-')">-</div>
+
+                    <div class="button back" onclick="back()"><</div>
+                    <div class="button" onclick="tagoonly('Math.PI'), display('π')">π</div>
                     <div class="button equals" onclick="calculate()">=</div>
                     
                 </div>
