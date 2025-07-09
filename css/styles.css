@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html::-webkit-scrollbar {
+    display: none;
+}
 a {
     text-decoration: none;
 }
@@ -128,4 +131,7 @@ a {
 }
 .back:active {
     background-color: rgb(146, 146, 146);
+}
+.button, .screen {
+    user-select: none;
 }
