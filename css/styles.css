@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
 }
+html:--webkit-scrollbar {
+    display: none;
 a {
     text-decoration: none;
 }
